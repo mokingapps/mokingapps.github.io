@@ -1,431 +1,536 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="MO KING BRAIN UP의 개인정보 처리, 광고, Google Play 구독, 데이터 보관 및 삭제에 관한 안내입니다.">
-<title>MO KING BRAIN UP | 개인정보처리방침</title>
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:#f5f8f6;
-  color:#24312c;
-  font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;
-  line-height:1.8;
-  overflow-wrap:anywhere
-}
-main{
-  max-width:840px;
-  margin:36px auto;
-  padding:32px;
-  background:#fff;
-  border-radius:18px;
-  box-shadow:0 5px 24px #193e2710
-}
-h1{
-  margin-top:0;
-  font-size:1.9rem;
-  line-height:1.4;
-  color:#206347
-}
-h2{
-  font-size:1.15rem;
-  margin-top:30px;
-  color:#206347
-}
-p{margin:12px 0}
-li{margin:8px 0}
-a{color:#176747;text-underline-offset:3px}
-.meta,footer{color:#69736d;font-size:.92rem}
-.info{
-  padding:16px;
-  margin:20px 0;
-  background:#eff8f2;
-  border-left:4px solid #39865b;
-  border-radius:8px
-}
-hr{border:0;border-top:1px solid #e2e9e4;margin:28px 0}
-@media(max-width:650px){
-  main{margin:0;padding:22px;border-radius:0}
-  h1{font-size:1.55rem}
-  ul{padding-left:22px}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="MO KING BRAIN UP 개인정보처리방침 / Privacy Policy. 기기 저장, 광고, 구독 및 개인정보 선택 안내.">
+  <meta property="og:title" content="MO KING BRAIN UP | Privacy Policy">
+  <meta property="og:description" content="MO KING BRAIN UP 개인정보처리방침 / Privacy Policy">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mokingapps.github.io/brainup-privacy.html">
+  <link rel="canonical" href="https://mokingapps.github.io/brainup-privacy.html">
+  <title>MO KING BRAIN UP | 개인정보처리방침 / Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f8f6;
+      --surface: #fff;
+      --text: #24312c;
+      --muted: #59655e;
+      --green: #206347;
+      --green2: #39865b;
+      --soft: #eff8f2;
+      --line: #dce9df;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Noto Sans KR", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+    main {
+      max-width: 880px;
+      margin: 36px auto;
+      padding: 32px;
+      background: var(--surface);
+      border-radius: 18px;
+      box-shadow: 0 5px 24px #193e2710;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.9rem; line-height: 1.4; color: var(--green); word-break: keep-all; }
+    h2 {
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      color: var(--green);
+      font-size: 1.16rem;
+      scroll-margin-top: 20px;
+    }
+    h3 { margin: 20px 0 8px; font-size: 1rem; color: var(--green); }
+    p { margin: 12px 0; }
+    ul, ol { padding-left: 24px; }
+    li { margin: 8px 0; }
+    a { color: #176747; text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible, .table-wrap:focus-visible {
+      outline: 3px solid var(--green2);
+      outline-offset: 3px;
+    }
+    .meta, footer { color: var(--muted); font-size: .92rem; }
+    .info {
+      padding: 16px;
+      margin: 20px 0;
+      background: var(--soft);
+      border-left: 4px solid var(--green2);
+      border-radius: 8px;
+    }
+    .language { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 24px; }
+    .language button {
+      min-height: 44px;
+      padding: 9px 18px;
+      border: 1px solid var(--green2);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--green);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .language button[aria-pressed="true"] { background: var(--green); color: #fff; }
+    .language button:hover { opacity: .88; }
+    [hidden] { display: none !important; }
+    article { scroll-margin-top: 20px; }
+    .table-wrap { overflow-x: auto; margin: 18px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    caption { text-align: left; font-weight: 700; margin-bottom: 8px; }
+    th, td { padding: 11px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: var(--soft); }
+    th[scope="row"] { min-width: 5.5em; }
+    .toc { padding: 16px 20px; margin: 24px 0; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; }
+    .toc ol { margin: 8px 0; columns: 2; }
+    .toc li { break-inside: avoid; }
+    .contact { padding: 18px; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; }
+    footer { text-align: center; margin-top: 32px; }
+    @media (max-width: 650px) {
+      main { margin: 0; padding: 22px; border-radius: 0; }
+      h1 { font-size: 1.55rem; }
+      ul, ol { padding-left: 22px; }
+      th, td { padding: 8px; }
+      .toc ol { columns: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: #fff; }
+      main { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      .language, .back-top { display: none !important; }
+      .table-wrap { overflow: visible; }
+      h2, h3 { break-after: avoid; }
+      tr { break-inside: avoid; }
+    }
+  </style>
 </head>
 <body>
-<main>
-<h1>MO KING BRAIN UP 개인정보처리방침</h1>
-<p class="meta">
-  시행일: <time datetime="2026-11-03">2026년 11월 3일</time>
-</p>
+<main id="main">
+  <nav id="language" class="language" aria-label="언어 선택 / Language selection" hidden>
+    <button type="button" data-language="ko" lang="ko" aria-controls="ko" aria-pressed="true">한국어</button>
+    <button type="button" data-language="en" lang="en" aria-controls="en" aria-pressed="false">English</button>
+  </nav>
+  <noscript>
+    <p class="info">JavaScript가 꺼져 있어 한국어와 영어를 함께 표시합니다. / Both languages are shown because JavaScript is disabled. <a href="#ko" lang="ko">한국어</a> · <a href="#en" lang="en">English</a></p>
+  </noscript>
 
-<p>
-  MO KING(이하 “운영자”)은 MO KING BRAIN UP(이하 “앱”)에서
-  개인정보를 처리하는 항목과 목적, 저장 및 삭제 방법,
-  외부 서비스 이용에 관한 사항을 다음과 같이 안내합니다.
-</p>
+  <article id="ko" class="policy" lang="ko" aria-labelledby="ko-title">
+    <h1 id="ko-title">MO KING BRAIN UP 개인정보처리방침</h1>
+    <p class="meta">시행일: <time datetime="2026-11-03">2026년 11월 3일</time></p>
+    <p>MO KING(이하 “운영자”)은 MO KING BRAIN UP(이하 “앱”)에서 처리하는 개인정보와 관련 데이터의 항목, 이용 목적, 보관 및 삭제, 외부 서비스 이용과 이용자의 권리를 다음과 같이 안내합니다.</p>
+    <div class="info">
+      <strong>주요 안내</strong>
+      <p>프로필, 게임 기록 및 설정은 기본적으로 기기 내부에 저장됩니다. 앱 자체의 회원가입이나 운영자 서버 로그인·동기화 기능은 없습니다.</p>
+      <p>Google 광고·개인정보 선택·Google Play 구독 서비스는 관련 정보를 외부에서 처리할 수 있습니다. Android 백업 설정에 따라 앱 데이터가 백업되거나 다른 기기로 이전될 수도 있습니다.</p>
+      <p>현재 월 구독 혜택은 광고 제거이며, 20개 게임은 구독 여부와 관계없이 이용할 수 있습니다.</p>
+    </div>
+    <nav class="toc" aria-label="한국어 목차">
+      <strong>목차</strong>
+      <ol>
+        <li><a href="#ko1">앱 및 운영자 정보</a></li>
+        <li><a href="#ko2">앱의 목적과 이용 방식</a></li>
+        <li><a href="#ko3">처리하는 정보</a></li>
+        <li><a href="#ko4">정보 이용 목적</a></li>
+        <li><a href="#ko5">기기 내부 저장과 백업</a></li>
+        <li><a href="#ko6">광고 및 AdMob</a></li>
+        <li><a href="#ko7">UMP 개인정보 선택</a></li>
+        <li><a href="#ko8">월 구독 및 결제</a></li>
+        <li><a href="#ko9">진단 정보</a></li>
+        <li><a href="#ko10">보관 및 삭제</a></li>
+        <li><a href="#ko11">외부 서비스와 국외 처리</a></li>
+        <li><a href="#ko12">아동 및 보호자</a></li>
+        <li><a href="#ko13">보안 조치</a></li>
+        <li><a href="#ko14">이용자의 권리</a></li>
+        <li><a href="#ko15">방침 변경</a></li>
+        <li><a href="#ko16">문의 및 공개 주소</a></li>
+      </ol>
+    </nav>
 
-<div class="info">
-  프로필·게임 기록·설정은 기본적으로 기기 내부에 저장됩니다.
-  광고와 구독 기능에서는 Google 서비스가 정보를 처리하며,
-  기기의 백업 설정에 따라 앱 데이터가 백업되거나 다른 기기로
-  이전될 수 있습니다.
-</div>
+    <h2 id="ko1">1. 앱 및 운영자 정보</h2>
+    <ul>
+      <li><strong>앱 이름:</strong> MO KING BRAIN UP</li>
+      <li><strong>운영자:</strong> MO KING</li>
+      <li><strong>배포 플랫폼:</strong> Android / Google Play</li>
+      <li><strong>앱 및 개인정보 문의:</strong> <a href="mailto:mokingdeveloper1@gmail.com">mokingdeveloper1@gmail.com</a></li>
+      <li><strong>공식 개인정보처리방침:</strong> <a href="https://mokingapps.github.io/brainup-privacy.html">https://mokingapps.github.io/brainup-privacy.html</a></li>
+    </ul>
 
-<h2>1. 앱의 목적과 이용 방식</h2>
-<p>
-  앱은 기억력·집중력·판단력·공간 및 퍼즐 활동을 위한
-  교육·게임 서비스입니다. 의료적 진단이나 치료 서비스를
-  제공하지 않습니다.
-</p>
-<p>
-  앱 자체의 회원가입이나 운영자 서버 로그인을 사용하지 않으며,
-  한 기기 안에서 여러 사용자 프로필을 만들어 이용할 수 있습니다.
-  Google Play 구매와 복원에는 Google Play 계정이 사용됩니다.
-</p>
+    <h2 id="ko2">2. 앱의 목적과 이용 방식</h2>
+    <p>앱은 어린이, 성인 및 고령자를 포함한 전 연령을 대상으로 기억력, 집중력, 판단력, 공간지각 및 퍼즐 활동을 즐길 수 있도록 제공하는 교육·인지활동 게임입니다. 아동이 이용하는 경우에는 12항의 보호자 안내를 함께 확인해 주세요.</p>
+    <p>앱은 의료기기가 아니며, 치매를 포함한 질병의 진단·치료·예방을 목적으로 하지 않습니다. 의료 전문가의 진단이나 치료를 대체하지 않습니다.</p>
+    <p>한 기기에서 여러 사용자 프로필을 만들 수 있습니다. 이 프로필은 기기 내부 사용자 구분용이며, Google Play 구매 및 구독 관리에는 Google Play 계정이 사용됩니다.</p>
+    <h3>지원 언어</h3>
+    <p>앱은 한국어, 영어, 일본어, 중국어(간체), 중국어(번체), 스페인어, 힌디어, 포르투갈어(브라질), 독일어, 프랑스어, 이탈리아어, 인도네시아어, 태국어, 베트남어, 아랍어, 폴란드어의 16개 언어를 지원합니다.</p>
+    <p>이 방침은 한국어와 영어로 제공됩니다. 앱과 외부 Google 서비스의 표시 언어는 서로 다를 수 있습니다.</p>
 
-<h2>2. 기기 내부에서 처리하는 정보</h2>
-<ul>
-  <li>
-    <strong>프로필 정보:</strong>
-    이름 또는 별명은 프로필 생성에 필요합니다.
-    나이와 성별은 선택 입력 사항입니다.
-    사용자 구분을 위한 내부 식별자와 프로필 생성·수정 시각도
-    함께 저장됩니다. 실명 입력은 필요하지 않습니다.
-  </li>
-  <li>
-    <strong>게임 이용 정보:</strong>
-    선택한 게임과 난이도, 게임 진행 및 이어하기 상태,
-    정답·오답과 제출 내역, 힌트 사용, 점수,
-    플레이 시간, 시작·완료 시각과 결과 기록을 저장합니다.
-  </li>
-  <li>
-    <strong>설정 정보:</strong>
-    언어, 선택한 사용자, 효과음·배경음악,
-    게임별 시간 등 이용 설정을 저장합니다.
-    처음 사용할 언어를 정하기 위해 기기의 언어·지역 설정을
-    확인할 수 있습니다.
-  </li>
-</ul>
-<p>
-  위 정보는 앱 전용 저장공간의 SQLite 데이터베이스와
-  설정 저장소 등에 보관됩니다.
-  앱에는 이 정보를 운영자 서버에 업로드하거나
-  운영자 계정으로 동기화하는 기능이 없습니다.
-  운영체제의 백업과 기기 이전에 관한 사항은 제8항을 참고하세요.
-</p>
-<p>
-  앱은 게임 기능을 위해 연락처, 사진 보관함, 마이크 녹음,
-  정확한 GPS 위치를 수집하지 않습니다.
-  광고 서비스가 IP 주소 등을 통해 처리하는 대략적인 위치 정보는
-  제4항과 같이 구분됩니다.
-</p>
+    <h2 id="ko3">3. 처리하는 정보</h2>
+    <div class="table-wrap" role="region" aria-label="처리 정보 표" tabindex="0">
+      <table>
+        <caption>앱 및 연동 서비스의 처리 정보</caption>
+        <thead><tr><th scope="col">정보 범주</th><th scope="col">세부 항목</th><th scope="col">처리 목적</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">프로필</th><td>이름 또는 별명, 선택 입력한 나이·성별, 내부 사용자 ID, 생성·수정 시각 및 나이 입력 기준일</td><td>사용자 구분, 프로필 및 화면 표시 관리</td></tr>
+          <tr><th scope="row">게임 기록</th><td>게임 종류, 난이도, 문제 구성·진행, 정답·오답, 제출·힌트 내역, 점수, 플레이 시간, 시작·완료 시각</td><td>게임 실행, 채점, 이어하기, 결과 및 기록 제공</td></tr>
+          <tr><th scope="row">설정</th><td>언어, 선택 사용자, 효과음·배경음악, 게임별 시간 및 기타 이용 설정</td><td>이용 환경 유지</td></tr>
+          <tr><th scope="row">구독</th><td>상품 ID, 가격·통화, 구매·승인 상태, 구독 확인 상태·시각, 구매토큰 등 구매 확인 식별정보 및 그 해시</td><td>Google Play 구매 확인·승인, 광고 제거 및 구독 복원</td></tr>
+          <tr><th scope="row">진단</th><td>앱 버전, 실행 단계·세션, 처리 시간, 오류·타임아웃 상태 및 기술적 응답 코드</td><td>시작 지연 및 기술적 오류 분석</td></tr>
+          <tr><th scope="row">광고 SDK</th><td>IP 주소, IP 기반 대략적인 위치, 광고 ID·App Set ID 등 식별정보, 기기·앱 정보, 광고·앱 상호작용 및 진단정보</td><td>Google의 광고 제공·측정·분석, 보안 및 부정행위 방지</td></tr>
+          <tr><th scope="row">문의</th><td>이용자가 이메일로 제공하는 회신 주소, 문의 내용 및 선택하여 첨부한 자료</td><td>문의 응대 및 문제 해결</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>이름 또는 별명은 프로필 생성에 필요하며, 나이와 성별은 선택 사항입니다. 실명 입력은 필요하지 않습니다.</p>
+    <p>앱은 게임 기능을 위해 연락처, 사진 보관함, 마이크 녹음 또는 정확한 GPS 위치 접근을 요구하지 않습니다. 광고 서비스의 IP 기반 대략적인 위치 처리는 별도로 이루어질 수 있습니다.</p>
+    <p>위 항목이 모두 운영자에게 전송되는 것은 아닙니다. 기기 저장 정보와 외부 서비스의 처리 범위는 아래에서 구분하여 안내합니다.</p>
 
-<h2>3. 정보의 이용 목적</h2>
-<ul>
-  <li>사용자별 프로필과 게임 기록 구분</li>
-  <li>게임 진행, 이어하기, 채점, 결과 및 날짜별 기록 표시</li>
-  <li>사용자별 난이도와 게임 이용 설정 적용</li>
-  <li>앱 재실행 및 업데이트 후 기존 설정과 기록 유지</li>
-  <li>구독 상태 확인, 구매 복원 및 광고 제거 권한 적용</li>
-  <li>앱 시작 지연, 저장 오류, 광고·결제 연결 오류의 진단</li>
-</ul>
-<p>
-  앱은 입력한 이름·나이·성별이나 개별 게임 답안·점수·기록을
-  광고 요청에 첨부하지 않습니다.
-</p>
+    <h2 id="ko4">4. 정보 이용 목적</h2>
+    <ul>
+      <li>사용자 프로필 생성·수정·삭제 및 사용자별 화면 제공</li>
+      <li>게임 실행, 채점, 힌트, 난이도 조정 및 이어하기</li>
+      <li>점수, 날짜별 기록 및 활동 결과 표시</li>
+      <li>언어·오디오·게임 시간 설정과 재실행·업데이트 후 데이터 유지</li>
+      <li>광고 제공·측정 및 광고 개인정보 선택 처리</li>
+      <li>Google Play 구독 확인·복원 및 광고 제거 권한 적용</li>
+      <li>앱 실행 지연·오류 진단 및 이용자가 요청한 문의 처리</li>
+    </ul>
+    <p>앱은 프로필 이름, 나이, 성별, 개별 게임 답안이나 점수를 광고 요청에 직접 첨부하지 않습니다.</p>
 
-<h2>4. 광고와 광고 개인정보 설정</h2>
-<p>
-  앱에는 Google AdMob의 Google Mobile Ads SDK와
-  광고 개인정보 선택을 위한 User Messaging Platform(UMP) SDK가
-  연동되어 있습니다. 앱 실행 광고, 배너 광고,
-  전면 광고 등이 표시될 수 있으며, 제공 여부는
-  구독 상태·동의 상태·네트워크와 광고 제공 상황 등에 따라 달라집니다.
-</p>
-<p>
-  Google의 안내에 따르면 광고 SDK는 광고 제공, 광고 효과 측정,
-  서비스 분석 및 부정행위 방지를 위해 다음 정보를
-  자동으로 수집·공유할 수 있습니다.
-</p>
-<ul>
-  <li>IP 주소와 이를 통해 추정하는 대략적인 위치</li>
-  <li>광고 ID, 앱 세트 ID 등 기기 식별자와 해당되는 계정 관련 식별자</li>
-  <li>앱 실행, 광고 노출·클릭, 동영상 시청 등의 상호작용 정보</li>
-  <li>앱·SDK 성능, 실행 시간, 멈춤 현상 등의 진단 정보</li>
-</ul>
-<p>
-  실제 처리 범위는 기기와 계정 설정, 지역, 동의 상태,
-  SDK 및 Google의 정책에 따라 달라집니다.
-  광고 SDK의 정보 처리는 기기 내부에 저장하는
-  프로필·게임 기록과 별개입니다.
-</p>
-<p>
-  앱은 UMP SDK를 통해 동의 필요 여부와 광고 요청 가능 상태를
-  확인합니다. 필요한 경우 Google이 제공하는 개인정보 선택 화면이
-  표시되며, 지원되는 선택 사항은
-  <strong>설정 → 광고 개인정보 설정</strong>에서 확인하거나
-  변경할 수 있습니다.
-</p>
-<p>
-  Android의 광고 관련 설정에서 광고 ID를 관리할 수 있습니다.
-  맞춤 광고를 사용하지 않더라도 광고 제공·측정·보안에 필요한
-  일부 정보 처리가 계속될 수 있습니다.
-</p>
-<p>
-  자세한 내용:
-  <a href="https://policies.google.com/privacy?hl=ko"
-     target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>,
-  <a href="https://policies.google.com/technologies/partner-sites?hl=ko"
-     target="_blank" rel="noopener noreferrer">Google 제휴 앱의 정보 이용 안내</a>,
-  <a href="https://myadcenter.google.com/"
-     target="_blank" rel="noopener noreferrer">Google 광고 설정</a>
-</p>
+    <h2 id="ko5">5. 기기 내부 저장과 Android 백업</h2>
+    <p>프로필, 게임 기록, 이어하기 데이터 및 설정은 앱 전용 저장공간의 SQLite 데이터베이스와 설정 저장소 등에 보관됩니다. 앱에는 이 데이터를 운영자 서버로 자동 업로드하거나 운영자 계정으로 동기화하는 기능이 없습니다.</p>
+    <p>다만 기기·운영체제와 이용자의 Android 백업 설정에 따라 앱 데이터가 Google 또는 기기 제조사의 백업·기기 이전 기능에 포함될 수 있습니다. 재설치나 기기 설정 과정에서 백업 데이터가 복원될 수도 있습니다.</p>
+    <p>백업 사용 여부와 백업 사본은 Android·Google 계정 또는 기기 제조사의 설정에서 관리해 주세요. 앱에서 데이터를 삭제하거나 앱을 제거해도 기존 백업 사본이 즉시 함께 삭제된다고 보장할 수 없습니다.</p>
+    <p>자세한 내용: <a href="https://developer.android.com/identity/data/autobackup">Android 앱 데이터 백업 안내</a>.</p>
 
-<h2>5. Google Play 월 구독과 구매 정보</h2>
-<p>
-  앱에는 광고 제거를 위한 월 자동 갱신 구독 기능이 있습니다.
-  구독 상품 조회, 구매, 구매 확인 및 복원은
-  Google Play 결제 서비스를 통해 처리됩니다.
-</p>
-<p>
-  앱은 Google Play가 반환하는 상품·가격·통화 정보,
-  구매 및 구독 상태, 자동 갱신 여부와
-  구매 확인용 토큰 등을 처리합니다.
-  광고 제거 권한을 적용하고 재확인하기 위해
-  구독 상태, 마지막 확인 시각, 재확인 기준 시각,
-  자동 갱신 여부 및 구매 토큰의 단방향 해시 등을
-  기기 내부에 저장합니다.
-</p>
-<p>
-  앱은 Google 계정 비밀번호나 결제수단의 전체 카드번호를
-  직접 입력받거나 저장하지 않습니다.
-  Google 계정과 결제수단 등 Google이 처리하는 정보에는
-  Google의 개인정보처리방침과 결제 관련 정책이 적용됩니다.
-</p>
-<p>
-  앱의 구매 관리 기능 또는
-  <a href="https://play.google.com/store/account/subscriptions"
-     target="_blank" rel="noopener noreferrer">Google Play 구독 관리</a>에서
-  구독을 관리할 수 있습니다.
-  <strong>프로필 삭제, 앱 데이터 삭제 또는 앱 삭제만으로
-  Google Play 구독이 해지되지는 않습니다.</strong>
-</p>
-<p>
-  자세한 내용:
-  <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldl=ko&amp;ldo=0&amp;ldt=privacynotice"
-     target="_blank" rel="noopener noreferrer">Google Payments 개인정보처리방침</a>
-</p>
+    <h2 id="ko6">6. Google AdMob 및 광고</h2>
+    <p>앱은 Google Mobile Ads SDK(AdMob)를 이용하여 배너·전면·앱 시작 광고를 표시할 수 있습니다. 표시 여부는 구독 권한, 개인정보 선택, 네트워크와 광고 제공 상황 등에 따라 달라집니다.</p>
+    <p>Google 광고 SDK는 광고 제공·측정·분석과 부정행위 방지를 위해 IP 주소, 기기·계정 관련 식별정보, 앱·광고 상호작용 및 진단정보를 수집·공유할 수 있습니다. IP 주소는 대략적인 위치 추정에 사용될 수 있습니다.</p>
+    <p>실제 처리 범위는 SDK 설정, 기기, 지역 및 개인정보 선택 등에 따라 달라집니다. <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK 데이터 공개 안내</a>를 참고해 주세요.</p>
+    <p>유효한 광고 제거 구독 권한이 확인되면 앱은 광고 요청과 표시를 중단하도록 처리합니다. 구독 확인 및 필요한 개인정보 선택을 위한 Google 서비스 처리는 계속될 수 있습니다.</p>
 
-<h2>6. 앱 시작 및 결제 오류 진단 정보</h2>
-<p>
-  앱은 시작 지연이나 결제 연결 오류를 확인하기 위해
-  제한된 크기의 진단 정보를 기기에 저장합니다.
-</p>
-<ul>
-  <li>앱 버전·빌드 번호, 프로세스 및 실행 세션 식별자</li>
-  <li>최초 실행·업데이트 후 실행 여부와 실행 단계</li>
-  <li>처리 시간, 대기·성공·오류·타임아웃 등의 상태</li>
-  <li>스레드·실행 작업 상태와 기술적인 오류 원인</li>
-  <li>결제 응답 코드, 정제된 오류 메시지, 상품·요금제 조회 결과</li>
-</ul>
-<p>
-  앱이 별도로 작성하는 진단 로그에는 프로필 이름,
-  나이·성별, 개별 게임 답안, 구매 토큰 원문,
-  전체 주문번호 및 결제수단 정보를 기록하지 않도록 처리합니다.
-</p>
-<p>
-  주요 이벤트 로그는 최대 약 576KiB 범위에서 순환 저장하며,
-  용량 한도에 도달하면 오래된 로그부터 교체합니다.
-  별도의 소량 실행 상태 정보도 저장됩니다.
-  로그에는 고정된 일수 기준의 자동 삭제 기간이 설정되어 있지 않습니다.
-</p>
-<p>
-  이 진단 파일을 운영자 서버로 자동 전송하는 기능은 없습니다.
-  진단 내보내기를 지원하는 테스트 버전에서는 이용자가
-  직접 파일을 저장할 수 있습니다.
-  저장 위치로 클라우드를 선택하거나 파일을 다른 사람에게 공유하면
-  해당 저장·공유 서비스가 정보를 처리할 수 있습니다.
-</p>
+    <h2 id="ko7">7. UMP 및 광고 개인정보 선택</h2>
+    <p>앱은 Google User Messaging Platform(UMP)을 이용해 광고 개인정보 동의·선택 상태를 확인하고, 필요한 경우 Google이 제공하는 화면을 표시합니다.</p>
+    <p>지원되는 경우 <strong>설정 → 광고 개인정보 설정</strong>에서 선택 화면을 다시 열 수 있습니다. 지역·동의 상태·Google 메시지 설정에 따라 선택 화면이 필요하지 않거나 일시적으로 제공되지 않을 수 있습니다.</p>
+    <p>EEA, 영국, 스위스 및 미국의 일부 지역 등에서는 적용 법률과 Google 설정에 따라 동의, 거부, 동의 철회 또는 옵션 관리가 제공될 수 있습니다. 개인화 광고에 동의하지 않아도 허용되는 범위에서 비개인화·제한적 광고가 표시될 수 있습니다.</p>
+    <p>기기의 광고 ID 관련 설정과 Google 계정의 광고 설정도 이용할 수 있습니다. 광고 제거 구독과 광고 개인정보 선택은 별개의 기능입니다.</p>
+    <p>자세한 내용: <a href="https://developers.google.com/admob/android/privacy">Google UMP 개인정보 선택 안내</a>.</p>
 
-<h2>7. 보관 기간</h2>
-<ul>
-  <li>
-    <strong>프로필·게임 기록·설정:</strong>
-    해당 정보를 삭제하거나 앱 데이터를 삭제할 때까지
-    기기 내부에 보관합니다.
-    일반적인 앱 업데이트만으로 기존 데이터를 초기화하지 않습니다.
-  </li>
-  <li>
-    <strong>구독 확인 정보:</strong>
-    구독 확인 결과에 따라 갱신하며,
-    앱 데이터 삭제 전까지 마지막 확인 정보가 남을 수 있습니다.
-  </li>
-  <li>
-    <strong>진단 로그:</strong>
-    용량에 따른 순환 교체 또는 앱 데이터 삭제 시까지 보관합니다.
-  </li>
-  <li>
-    <strong>복구용 사본과 운영체제 백업:</strong>
-    제8항과 같이 원본 데이터와 별도로 남을 수 있습니다.
-  </li>
-  <li>
-    <strong>외부 서비스의 정보:</strong>
-    Google과 GitHub 등이 보관하는 정보에는
-    각 서비스의 보관·삭제 정책이 적용됩니다.
-    Google은 거래 및 법적 의무 이행 등에 필요한 정보를
-    추가로 보관할 수 있습니다.
-  </li>
-</ul>
+    <h2 id="ko8">8. 월 구독 및 Google Play 결제</h2>
+    <p>앱은 Google Play를 통한 자동 갱신 월 구독을 제공합니다. 현재 구독 혜택은 <strong>광고 제거</strong>이며, 20개 게임 이용에 구독은 필요하지 않습니다.</p>
+    <ul>
+      <li>가격과 통화는 Google Play 조회 결과로 표시되며, 최종 결제 조건은 Google Play 결제 화면에서 확인할 수 있습니다. 가격을 확인할 수 없는 경우 앱에서 구매를 진행하지 않습니다.</li>
+      <li>구매 전 보호자 확인 절차가 제공됩니다. 이 절차는 개인정보 처리에 필요한 법정대리인 동의 절차와는 별개입니다.</li>
+      <li>앱은 구매 확인·승인·복원을 위해 구매토큰 등 Google Play가 제공하는 구매 관련 정보를 처리하고, 권한 상태와 확인 시각 등을 기기에 저장할 수 있습니다.</li>
+      <li>전체 카드번호나 Google 계정 비밀번호를 운영자가 직접 수집·보관하지 않습니다.</li>
+      <li>구독은 기기 내부 프로필과 별도로 구매에 사용한 Google Play 계정에 연결됩니다. 복원에는 해당 계정과 Google Play 연결이 필요할 수 있습니다.</li>
+    </ul>
+    <p>구독은 해지하지 않으면 결제 조건에 따라 자동 갱신됩니다. 앱의 구독 관리 기능이나 <a href="https://play.google.com/store/account/subscriptions">Google Play 구독 관리</a>에서 확인·해지할 수 있습니다. 환불 및 결제 처리는 Google Play 정책과 관련 법령에 따릅니다.</p>
+    <p><strong>프로필 삭제, 앱 데이터 삭제 또는 앱 제거만으로 구독이 해지되지 않습니다.</strong> 해지를 원하면 Google Play에서 별도로 처리해 주세요. <a href="https://support.google.com/googleplay/answer/7018481?hl=ko">Google Play 구독 해지 안내</a>.</p>
 
-<h2>8. 데이터 삭제와 백업</h2>
-<p>
-  앱의 사용자 삭제 기능을 실행하면 현재 사용 중인 데이터베이스에서
-  해당 프로필과 연결된 게임 진행 상태, 결과·기록,
-  힌트·제출 내역 및 사용자별 설정을 함께 삭제합니다.
-  다른 사용자의 프로필과 기록은 유지합니다.
-</p>
-<p>
-  모든 로컬 데이터를 지우려면 Android의 앱 저장공간 설정에서
-  앱 데이터를 삭제하거나 앱을 삭제할 수 있습니다.
-  기기에서 별도로 내보낸 파일은 해당 저장 위치에서 삭제해야 합니다.
-</p>
-<p>
-  앱은 업데이트 등으로 데이터베이스 저장 구조를 변경해야 할 때
-  데이터 보호를 위한 복구용 사본을 만들 수 있습니다.
-  개별 프로필 삭제가 기존 복구용 사본까지 함께 지우지는 않으며,
-  사본에는 삭제 전 정보가 남을 수 있습니다.
-  이 사본은 별도의 자동 만료 기간이 없어
-  앱 데이터 삭제 전까지 보관될 수 있습니다.
-</p>
-<p>
-  현재 앱은 Android의 시스템 백업을 별도로 차단하지 않습니다.
-  기기·Google 계정·제조사 설정에 따라 데이터베이스,
-  설정 및 진단 파일 등이 시스템 백업이나 기기 이전에
-  포함될 수 있습니다.
-  앱 데이터나 앱을 삭제해도 기존 시스템 백업까지
-  함께 삭제되는 것은 아닙니다.
-</p>
-<p>
-  백업본은 기기 또는 백업 제공업체의 설정에서 별도로 관리해야 합니다.
-  과거 백업을 복원하면 삭제 이전의 데이터가 다시 나타날 수 있습니다.
-  앱 자체는 기기나 백업에 접근할 수 없는 상태에서
-  이용자의 로컬 데이터를 원격으로 삭제할 수 없습니다.
-</p>
-<p>
-  프로필 삭제나 앱 삭제는 Google이 보관하는 결제 내역·광고 관련 정보,
-  Google Play 계정 및 구독을 삭제하거나 해지하지 않습니다.
-</p>
+    <h2 id="ko9">9. 진단 정보</h2>
+    <p>앱은 시작 지연과 기술적 오류를 확인하기 위해 실행 단계, 앱 버전, 실행 세션·프로세스 식별정보, 시각·처리 시간 및 오류·응답 상태 등의 제한된 진단정보를 기기에 기록할 수 있습니다.</p>
+    <p>앱 자체의 진단 기록에는 프로필 이름·나이·성별, 개별 게임 답안, 데이터베이스 내용 또는 구매토큰 원문을 기록하지 않도록 구성되어 있습니다. 기록은 저장 용량 한도에 따라 오래된 내용부터 순환 교체됩니다.</p>
+    <p>이 진단 파일을 운영자 서버로 자동 전송하는 기능은 없습니다. 파일 내보내기가 제공되는 버전에서는 이용자가 직접 저장하거나 문의 이메일에 첨부할 수 있습니다. 내보낸 사본은 이용자가 별도로 관리·삭제해야 합니다. Google SDK의 자체 진단정보 처리는 6항 및 11항에 따릅니다.</p>
 
-<h2>9. 외부 서비스와 국외 처리</h2>
-<p>
-  앱에서 이용하는 주요 외부 서비스는 다음과 같습니다.
-</p>
-<ul>
-  <li>
-    <strong>Google AdMob 및 UMP:</strong>
-    광고 제공·측정·부정행위 방지와 광고 개인정보 선택 처리
-  </li>
-  <li>
-    <strong>Google Play 및 Google Payments:</strong>
-    상품 조회, 구독 구매·관리·복원과 결제 처리
-  </li>
-  <li>
-    <strong>Google 또는 기기 제조사의 백업 서비스:</strong>
-    이용자의 기기 설정에 따른 앱 데이터 백업·복원·이전
-  </li>
-  <li>
-    <strong>GitHub Pages:</strong>
-    이 개인정보처리방침 웹페이지 제공
-  </li>
-</ul>
-<p>
-  광고·동의 정보 요청, 상품 조회·구매·복원,
-  시스템 백업 또는 웹페이지 접속 과정에서
-  관련 정보가 네트워크를 통해 처리될 수 있습니다.
-  Google과 GitHub 등은 거주 국가 밖의 서버에서
-  정보를 처리할 수 있습니다.
-  처리 국가와 보관 기간, 이용자의 선택 및 권리 행사에 관한
-  사항은 해당 서비스의 방침에 따릅니다.
-</p>
-<p>
-  이 페이지를 방문하면 GitHub Pages는 보안 목적으로
-  방문자의 IP 주소를 기록·보관합니다.
-  앱은 개인정보처리방침 페이지를 열 때
-  프로필이나 게임 기록을 웹주소에 첨부하지 않습니다.
-</p>
-<p>
-  GitHub 관련 안내:
-  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-     target="_blank" rel="noopener noreferrer">GitHub 개인정보처리방침</a>
-</p>
+    <h2 id="ko10">10. 보관 기간 및 삭제 방법</h2>
+    <ul>
+      <li><strong>프로필·게임 기록:</strong> 해당 프로필을 삭제하거나 앱 데이터를 삭제할 때까지 기기에 보관됩니다. 앱의 사용자 선택·관리 화면에서 프로필을 삭제하면 해당 사용자에게 연결된 게임 기록과 사용자별 설정도 삭제됩니다.</li>
+      <li><strong>앱 공통 설정·구독 확인 상태:</strong> 기능 제공에 필요한 동안 유지·갱신되며, Android 앱 데이터 삭제 또는 앱 제거 시 기기 내 앱 데이터와 함께 삭제됩니다.</li>
+      <li><strong>앱 자체 진단 기록:</strong> 용량 한도에 따라 순환 교체되며, 앱 데이터 삭제 또는 앱 제거로 기기 내 기록을 삭제할 수 있습니다.</li>
+      <li><strong>문의 이메일·첨부자료:</strong> 문의 처리 및 필요한 후속 대응을 위해 보관하고, 목적이 달성되면 삭제합니다. 법령상 보존이 필요한 경우에는 해당 법령에서 정한 기간 동안 보관합니다.</li>
+      <li><strong>Google·백업 서비스가 처리하는 정보:</strong> 해당 제공자의 보관 정책과 계정 설정이 적용됩니다.</li>
+    </ul>
+    <p>전체 로컬 데이터를 삭제하려면 Android의 <strong>설정 → 앱 → MO KING BRAIN UP → 저장공간 → 데이터 삭제</strong>를 이용하거나 앱을 제거할 수 있습니다. 메뉴 이름은 기기에 따라 다를 수 있습니다. 삭제하면 해당 기기의 프로필과 게임 기록을 이용할 수 없게 됩니다.</p>
+    <p>백업에서 복원하면 과거 데이터가 다시 나타날 수 있으므로 백업 사본도 확인해 주세요. 로컬 데이터 삭제는 Google Play의 구매 기록, Google 서비스의 보관 정보 또는 구독 해지를 함께 처리하지 않습니다.</p>
+    <p>운영자는 기기 안에만 저장된 데이터를 원격으로 열람·삭제할 수 없습니다. 삭제 방법이나 운영자에게 보낸 문의자료의 삭제는 16항의 이메일로 요청할 수 있습니다.</p>
 
-<h2>10. 이용자의 선택과 권리 행사</h2>
-<ul>
-  <li>앱에서 프로필 정보를 확인·수정하거나 사용자 프로필을 삭제할 수 있습니다.</li>
-  <li>기록 메뉴에서 저장된 게임 결과를 확인할 수 있습니다.</li>
-  <li>설정 메뉴에서 언어·소리·게임 이용 설정 등을 변경할 수 있습니다.</li>
-  <li>광고 개인정보 설정과 Android·Google의 광고 설정을 이용할 수 있습니다.</li>
-  <li>Google Play에서 구독을 관리하거나 해지할 수 있습니다.</li>
-  <li>기기 설정에서 앱 데이터와 시스템 백업을 관리할 수 있습니다.</li>
-</ul>
-<p>
-  개인정보 처리에 관한 문의나 권리 행사 요청은
-  제13항의 연락처로 보내실 수 있습니다.
-  기기 내부 데이터는 운영자가 원격으로 열람하거나
-  수정·삭제할 수 없으므로 앱과 기기 설정을 통한 처리 방법을
-  안내해 드릴 수 있습니다.
-</p>
+    <h2 id="ko11">11. 외부 서비스 및 국외 처리</h2>
+    <p>앱 및 문의 과정에서 다음 외부 서비스가 이용됩니다.</p>
+    <ul>
+      <li><strong>Google AdMob·UMP:</strong> 광고 제공·측정·보안 및 개인정보 선택 처리</li>
+      <li><strong>Google Play:</strong> 앱 배포, 결제, 구독 확인·승인·관리·복원</li>
+      <li><strong>Android·Google 또는 기기 제조사의 백업 서비스:</strong> 이용자 설정에 따른 앱 데이터 백업 및 기기 이전</li>
+      <li><strong>Gmail:</strong> 이용자가 운영자에게 이메일로 문의할 때 문의·첨부자료 송수신 및 보관</li>
+    </ul>
+    <p>Google 서비스 이용 시 관련 정보는 서비스 요청 과정에서 네트워크를 통해 Google LLC 및 관련 계열사에 전송·처리될 수 있습니다. 서비스 및 이용자의 지역에 따라 미국 등 거주국 외 국가의 서버에서 처리될 수 있습니다. 백업과 이메일에도 해당 제공자의 처리 방식이 적용됩니다.</p>
+    <p>외부 서비스의 처리 항목·목적은 위 관련 항목을, 구체적인 처리 위치·보관 기간·보호조치·권리 행사 방법은 각 제공자의 안내를 확인해 주세요. Google 관련 안내: <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>.</p>
+    <p>앱은 기기 내부의 프로필과 개별 게임 기록을 광고주에게 직접 전달하거나 판매하는 기능을 두고 있지 않습니다. 외부 광고 SDK의 데이터 처리는 6항에 설명된 범위에서 별도로 이루어집니다.</p>
 
-<h2>11. 아동·청소년과 보호자</h2>
-<p>
-  아동·청소년이 이용하는 경우 보호자가 프로필 입력,
-  광고 개인정보 설정 및 유료 구독 내용을 함께 확인해 주세요.
-  이름 대신 별명을 사용할 수 있으며,
-  나이와 성별을 입력하지 않아도 프로필을 이용할 수 있습니다.
-</p>
-<p>
-  프로필에 입력하는 나이는 선택 정보이며
-  이용자의 연령이나 보호자의 신원을 인증하지 않습니다.
-  구매 전 보호자 확인 화면도 법정대리인 본인인증 기능은 아닙니다.
-  보호자는 앱의 프로필 수정·삭제 기능을 이용하거나
-  아래 연락처로 개인정보 관련 사항을 문의할 수 있습니다.
-</p>
+    <h2 id="ko12">12. 아동 및 보호자 안내</h2>
+    <p>앱의 이용 대상에는 아동이 포함됩니다. 보호자는 아동의 프로필 입력, 광고 개인정보 선택 및 결제 여부를 함께 관리해 주세요. 실명이나 불필요한 개인정보를 입력하지 않고 별명을 사용하는 것을 권장합니다.</p>
+    <p>한국에서 만 14세 미만 아동의 개인정보 처리에 법률상 동의가 필요한 경우에는 법정대리인의 동의 및 확인이 필요합니다. 다른 지역에서는 해당 지역의 아동 개인정보 보호 규정과 동의 연령이 적용됩니다.</p>
+    <p>프로필의 나이 입력, 구독 구매 전 보호자 확인 또는 이 방침의 열람은 법률상 필요한 개인정보 동의·연령 확인을 대체하지 않습니다.</p>
+    <p>보호자는 앱에서 아동의 프로필과 기록을 확인·수정·삭제할 수 있으며, 개인정보 처리에 관한 문의나 권리 행사는 16항의 이메일로 요청할 수 있습니다. 필요한 동의 없이 처리된 아동의 개인정보에 관한 문의가 접수되면 사실관계를 확인하고 삭제 등 필요한 조치를 취합니다.</p>
 
-<h2>12. 정보 보호 조치</h2>
-<p>
-  앱은 Android의 앱 전용 저장공간을 사용하고,
-  사용자별 데이터 구분, 저장 무결성 확인 및
-  저장 오류 시 데이터 보호를 위한 처리를 적용합니다.
-  진단 정보는 필요한 기술 정보로 제한하고
-  민감한 값이 로그에 포함되지 않도록 처리합니다.
-</p>
-<p>
-  Google Mobile Ads SDK가 전송하는 정보는
-  Google의 안내에 따라 TLS로 암호화됩니다.
-  기기 잠금, 운영체제 보안 상태 및 백업 설정 역시
-  이용자 데이터 보호에 영향을 줄 수 있습니다.
-</p>
+    <h2 id="ko13">13. 보안 조치</h2>
+    <ul>
+      <li>프로필·게임 기록과 설정을 Android 앱 전용 저장공간에 보관합니다.</li>
+      <li>앱 자체의 진단 기록에서 프로필 내용과 구매토큰 원문 등 불필요한 정보의 기록을 제한합니다.</li>
+      <li>결제는 Google Play 결제 기능을 이용하며, Google Mobile Ads SDK가 전송하는 사용자 데이터에는 Google이 제공하는 TLS 전송 암호화가 적용됩니다.</li>
+      <li>문의 처리 시 필요한 정보만 요청하고, 문의자료는 처리 목적에 맞게 사용합니다.</li>
+    </ul>
+    <p>기기 분실이나 다른 사용자의 접근을 줄이기 위해 화면 잠금과 운영체제 보안 업데이트를 이용해 주세요. 한 기기의 여러 프로필은 별도 로그인 계정으로 보호되는 구조가 아니므로 기기를 공유하는 사람이 다른 프로필과 기록을 볼 수 있습니다.</p>
 
-<h2>13. 문의 및 방침 변경</h2>
-<p>
-  운영자: <strong>MO KING</strong><br>
-  앱 이름: <strong>MO KING BRAIN UP</strong><br>
-  개인정보 문의: <strong>[문의 이메일]</strong><br>
-  시행일: <strong>2026년 11월 3일</strong>
-</p>
-<p>
-  개인정보 처리 방식이나 연동 서비스가 변경되면
-  변경 사항과 시행일을 이 페이지에 안내합니다.
-  별도의 고지나 동의가 필요한 경우 관련 절차를 진행합니다.
-</p>
+    <h2 id="ko14">14. 이용자의 권리 및 행사 방법</h2>
+    <p>이용자와 법정대리인은 적용되는 법령에 따라 개인정보의 열람, 정정, 삭제, 처리정지·제한, 동의 철회 등 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li><strong>기기 내부 정보:</strong> 앱에서 프로필과 기록을 확인하고 프로필 수정·삭제 기능 또는 Android 앱 데이터 삭제 기능을 이용할 수 있습니다.</li>
+      <li><strong>광고 개인정보 선택:</strong> 지원되는 경우 설정의 광고 개인정보 설정 메뉴와 기기·Google 계정의 개인정보 설정을 이용할 수 있습니다.</li>
+      <li><strong>구독:</strong> Google Play 계정에서 관리·해지할 수 있습니다.</li>
+      <li><strong>운영자가 받은 문의자료:</strong> 아래 이메일로 열람·정정·삭제 등을 요청할 수 있습니다.</li>
+    </ul>
+    <p>요청 확인에 필요한 최소한의 정보가 추가로 필요할 수 있습니다. 관련 법령에서 정한 절차와 기한에 따라 처리하고, 법령상 제한 등으로 요청을 이행할 수 없는 경우 그 사유를 안내합니다. Google 등 외부 서비스가 관리하는 데이터에 관한 요청은 해당 제공자의 권리 행사 절차를 이용해야 할 수 있습니다.</p>
+    <p>거주 지역의 개인정보 보호 감독기관에 상담이나 불만을 제기할 수도 있습니다.</p>
 
-<hr>
-<footer>
-  © 2026 MO KING. All rights reserved.
-  | <a href="/">MO KING 홈</a>
-</footer>
+    <h2 id="ko15">15. 개인정보처리방침 변경</h2>
+    <p>앱 기능, 외부 서비스 또는 관련 법령이 변경되면 이 방침을 수정할 수 있습니다. 변경된 내용과 시행일은 이 페이지에 게시합니다. 이용자의 권리에 중요한 변경이 있는 경우 앱 내 안내 등 적절한 방법으로 알리고, 법률상 별도 동의가 필요한 경우에는 해당 동의를 받습니다.</p>
+
+    <h2 id="ko16">16. 문의 및 공개 주소</h2>
+    <div class="contact">
+      <p><strong>운영자 및 개인정보 문의 담당:</strong> MO KING</p>
+      <p><strong>이메일:</strong> <a href="mailto:mokingdeveloper1@gmail.com">mokingdeveloper1@gmail.com</a></p>
+      <p><strong>공개 주소:</strong> <a href="https://mokingapps.github.io/brainup-privacy.html">https://mokingapps.github.io/brainup-privacy.html</a></p>
+    </div>
+    <p>문의 시 앱 이름과 문제 상황을 알려 주세요. 비밀번호, 전체 카드번호 또는 구매토큰 원문은 보내지 마세요. 화면이나 진단자료를 첨부할 때는 불필요한 개인정보를 가려 주세요.</p>
+    <p>이 방침 페이지는 GitHub Pages로 제공됩니다. GitHub는 페이지 접속자의 IP 주소를 보안 목적으로 기록·보관합니다. 이 페이지 자체에는 별도 광고·분석 스크립트나 개인정보 입력 양식을 두지 않습니다. 자세한 내용: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>.</p>
+    <p class="back-top"><a href="#ko">맨 위로</a></p>
+  </article>
+
+  <article id="en" class="policy" lang="en" aria-labelledby="en-title">
+    <h1 id="en-title">MO KING BRAIN UP Privacy Policy</h1>
+    <p class="meta">Effective date: <time datetime="2026-11-03">November 3, 2026</time></p>
+    <p>MO KING (“we” or the “Operator”) explains below how MO KING BRAIN UP (the “App”) processes personal information and related data, including its purposes, retention, deletion, external services, and your rights.</p>
+    <div class="info">
+      <strong>Key information</strong>
+      <p>Profiles, game records, and settings are primarily stored on your device. The App has no separate account registration, Operator server login, or Operator account synchronization.</p>
+      <p>Google advertising, privacy choices, and Google Play subscription services may process related information externally. Android backup settings may also allow App data to be backed up or transferred to another device.</p>
+      <p>The current monthly subscription benefit is ad removal. All 20 games are available regardless of subscription status.</p>
+    </div>
+    <nav class="toc" aria-label="English table of contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#en1">App and Operator information</a></li>
+        <li><a href="#en2">Purpose and use of the App</a></li>
+        <li><a href="#en3">Information processed</a></li>
+        <li><a href="#en4">Purposes of processing</a></li>
+        <li><a href="#en5">Device storage and backup</a></li>
+        <li><a href="#en6">Advertising and AdMob</a></li>
+        <li><a href="#en7">UMP privacy choices</a></li>
+        <li><a href="#en8">Monthly subscriptions and payments</a></li>
+        <li><a href="#en9">Diagnostics</a></li>
+        <li><a href="#en10">Retention and deletion</a></li>
+        <li><a href="#en11">External services and international processing</a></li>
+        <li><a href="#en12">Children and guardians</a></li>
+        <li><a href="#en13">Security</a></li>
+        <li><a href="#en14">Your rights</a></li>
+        <li><a href="#en15">Policy changes</a></li>
+        <li><a href="#en16">Contact and public URL</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="en1">1. App and Operator information</h2>
+    <ul>
+      <li><strong>App name:</strong> MO KING BRAIN UP</li>
+      <li><strong>Operator:</strong> MO KING</li>
+      <li><strong>Distribution platform:</strong> Android / Google Play</li>
+      <li><strong>App and privacy contact:</strong> <a href="mailto:mokingdeveloper1@gmail.com">mokingdeveloper1@gmail.com</a></li>
+      <li><strong>Official Privacy Policy:</strong> <a href="https://mokingapps.github.io/brainup-privacy.html">https://mokingapps.github.io/brainup-privacy.html</a></li>
+    </ul>
+
+    <h2 id="en2">2. Purpose and use of the App</h2>
+    <p>The App is intended for all ages, including children, adults, and older adults, and offers educational and cognitive activity games involving memory, attention, judgment, spatial perception, and puzzles. If a child uses the App, please also read the guidance for guardians in Section 12.</p>
+    <p>The App is not a medical device and is not intended to diagnose, treat, or prevent any disease, including dementia. It does not replace professional medical diagnosis or treatment.</p>
+    <p>You can create multiple profiles on one device. These profiles distinguish local users. Google Play purchases and subscription management use a Google Play account.</p>
+    <h3>Supported languages</h3>
+    <p>The App supports 16 languages: Korean, English, Japanese, Simplified Chinese, Traditional Chinese, Spanish, Hindi, Brazilian Portuguese, German, French, Italian, Indonesian, Thai, Vietnamese, Arabic, and Polish.</p>
+    <p>This Policy is provided in Korean and English. The App and external Google services may use different display languages.</p>
+
+    <h2 id="en3">3. Information processed</h2>
+    <div class="table-wrap" role="region" aria-label="Information processed table" tabindex="0">
+      <table>
+        <caption>Information processed by the App and connected services</caption>
+        <thead><tr><th scope="col">Category</th><th scope="col">Details</th><th scope="col">Purpose</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Profiles</th><td>Name or nickname, optional age and gender, internal user ID, creation and update times, and the reference date for the entered age</td><td>Distinguishing users and managing profiles and their display</td></tr>
+          <tr><th scope="row">Game records</th><td>Game type, difficulty, questions and progress, correct and incorrect answers, submissions and hints, scores, play duration, and start and completion times</td><td>Gameplay, scoring, resuming games, results, and records</td></tr>
+          <tr><th scope="row">Settings</th><td>Language, selected user, sound effects, background music, game time settings, and other preferences</td><td>Maintaining your preferences</td></tr>
+          <tr><th scope="row">Subscriptions</th><td>Product ID, price and currency, purchase and acknowledgment status, subscription verification status and time, purchase identifiers such as purchase tokens, and their hashes</td><td>Google Play purchase verification and acknowledgment, ad removal, and restoration</td></tr>
+          <tr><th scope="row">Diagnostics</th><td>App version, execution stages and sessions, processing times, error and timeout states, and technical response codes</td><td>Investigating startup delays and technical errors</td></tr>
+          <tr><th scope="row">Advertising SDK</th><td>IP address, approximate location inferred from IP, identifiers such as advertising ID and App Set ID, device and app information, app and ad interactions, and diagnostics</td><td>Google advertising, measurement, analytics, security, and fraud prevention</td></tr>
+          <tr><th scope="row">Support</th><td>Your reply email address, inquiry, and any materials you choose to attach</td><td>Responding to inquiries and resolving issues</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>A name or nickname is required to create a profile. Age and gender are optional. You do not need to provide your real name.</p>
+    <p>The App does not require access to contacts, your photo library, microphone recording, or precise GPS location for gameplay. Advertising services may separately process approximate location inferred from an IP address.</p>
+    <p>Not all the information above is transmitted to the Operator. Local storage and external service processing are explained separately below.</p>
+
+    <h2 id="en4">4. Purposes of processing</h2>
+    <ul>
+      <li>Creating, editing, and deleting profiles and providing user-specific displays</li>
+      <li>Gameplay, scoring, hints, difficulty adjustment, and resuming games</li>
+      <li>Displaying scores, records by date, and activity results</li>
+      <li>Maintaining language, audio, and game time settings and preserving data after relaunches and updates</li>
+      <li>Providing and measuring ads and managing advertising privacy choices</li>
+      <li>Checking and restoring Google Play subscriptions and applying ad removal</li>
+      <li>Diagnosing startup delays and errors and responding to your support requests</li>
+    </ul>
+    <p>The App does not directly attach profile names, ages, genders, individual game answers, or scores to advertising requests.</p>
+
+    <h2 id="en5">5. Device storage and Android backup</h2>
+    <p>Profiles, game records, saved progress, and settings are stored in the App's private storage, including a SQLite database and preference storage. The App does not automatically upload these records to an Operator server or synchronize them through an Operator account.</p>
+    <p>Depending on your device, operating system, and Android backup settings, App data may be included in Google or device manufacturer backups and device transfers. Backups may be restored when you reinstall the App or set up a device.</p>
+    <p>Manage backups and backup copies through Android, your Google account, or your device manufacturer's settings. Deleting local data or uninstalling the App does not guarantee that an existing backup copy is immediately deleted.</p>
+    <p>More information: <a href="https://developer.android.com/identity/data/autobackup">Android App data backup guidance</a>.</p>
+
+    <h2 id="en6">6. Google AdMob and advertising</h2>
+    <p>The App may display banner, interstitial, and app open ads using the Google Mobile Ads SDK (AdMob). Ad availability depends on subscription access, privacy choices, connectivity, and ad availability.</p>
+    <p>Google's advertising SDK may collect and share IP addresses, device and account identifiers, app and ad interactions, and diagnostics for advertising, measurement, analytics, and fraud prevention. IP addresses may be used to estimate approximate location.</p>
+    <p>Actual processing depends on SDK settings, your device, region, and privacy choices. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosures</a>.</p>
+    <p>When valid ad removal subscription access is confirmed, the App stops requesting and displaying ads. Google service processing needed for subscription checks and applicable privacy choices may continue.</p>
+
+    <h2 id="en7">7. UMP and advertising privacy choices</h2>
+    <p>The App uses Google's User Messaging Platform (UMP) to check advertising privacy consent and choices and to show a Google-provided form when required.</p>
+    <p>Where available, you can reopen the form through <strong>Settings → Ad privacy settings</strong>. A form may not be required or may be temporarily unavailable depending on your region, consent status, and Google's message configuration.</p>
+    <p>In regions such as the EEA, the United Kingdom, Switzerland, and some US states, applicable law and Google settings may provide consent, refusal, withdrawal, or option management. Non-personalized or limited ads may still be shown where permitted if you do not consent to personalized ads.</p>
+    <p>You can also use your device's advertising ID controls and Google account advertising settings. An ad removal subscription and advertising privacy choices are separate features.</p>
+    <p>More information: <a href="https://developers.google.com/admob/android/privacy">Google UMP privacy choices guidance</a>.</p>
+
+    <h2 id="en8">8. Monthly subscriptions and Google Play payments</h2>
+    <p>The App offers an automatically renewing monthly subscription through Google Play. Its current benefit is <strong>ad removal</strong>. A subscription is not required to play any of the 20 games.</p>
+    <ul>
+      <li>Prices and currencies are retrieved from Google Play. Final purchase terms appear on the Google Play purchase screen. The App does not proceed with a purchase if the price cannot be confirmed.</li>
+      <li>A guardian check is provided before purchase. This is separate from any legally required parental consent for personal information processing.</li>
+      <li>The App processes purchase information provided by Google Play, including purchase tokens, for verification, acknowledgment, and restoration. Access status and verification times may be stored on your device.</li>
+      <li>The Operator does not directly collect or store your full payment card number or Google account password.</li>
+      <li>Subscriptions are associated with the Google Play account used for purchase, separately from local profiles. Restoration may require that account and a connection to Google Play.</li>
+    </ul>
+    <p>Subscriptions renew automatically under the purchase terms unless canceled. You can manage or cancel through the App's subscription management feature or <a href="https://play.google.com/store/account/subscriptions">Google Play subscription management</a>. Refunds and payment processing are subject to Google Play policies and applicable law.</p>
+    <p><strong>Deleting a profile, clearing App data, or uninstalling the App does not cancel your subscription.</strong> Cancel separately through Google Play if you wish to stop renewal. See <a href="https://support.google.com/googleplay/answer/7018481?hl=en">Google Play cancellation guidance</a>.</p>
+
+    <h2 id="en9">9. Diagnostics</h2>
+    <p>The App may keep limited local diagnostic records to investigate startup delays and technical errors. These include execution stages, App version, execution session and process identifiers, timestamps, processing times, and error or response states.</p>
+    <p>The App's own diagnostic records are designed to exclude profile names, ages, genders, individual game answers, database contents, and raw purchase tokens. Older records are rotated out when storage limits are reached.</p>
+    <p>The App does not automatically send these diagnostic files to an Operator server. In versions that provide file export, you may save a file yourself or attach it to a support email. You must manage and delete exported copies separately. Google SDK diagnostics are covered in Sections 6 and 11.</p>
+
+    <h2 id="en10">10. Retention and deletion</h2>
+    <ul>
+      <li><strong>Profiles and game records:</strong> Kept locally until you delete the profile or clear App data. Deleting a profile from the user selection or management screen also deletes the game records and user-specific settings linked to that profile.</li>
+      <li><strong>App-wide settings and subscription verification state:</strong> Retained and updated as needed to provide the features. These local records are removed when you clear App data in Android or uninstall the App.</li>
+      <li><strong>The App's own diagnostic records:</strong> Rotated according to storage limits. Local records can also be removed by clearing App data or uninstalling the App.</li>
+      <li><strong>Support emails and attachments:</strong> Kept to handle your inquiry and necessary follow-up, then deleted when that purpose has been fulfilled. If retention is legally required, the information is kept for the period required by law.</li>
+      <li><strong>Information held by Google and backup services:</strong> Subject to the provider's retention policies and your account settings.</li>
+    </ul>
+    <p>To remove all local App data, use Android <strong>Settings → Apps → MO KING BRAIN UP → Storage → Clear data</strong>, or uninstall the App. Menu names may vary by device. You will lose access to the profiles and game records stored on that device.</p>
+    <p>Old records may reappear if a backup is restored, so also review your backup copies. Removing local data does not delete Google Play purchase history or information retained by Google services, and does not cancel a subscription.</p>
+    <p>The Operator cannot remotely view or delete data stored only on your device. Contact the email in Section 16 for deletion guidance or to request deletion of support materials you sent to us.</p>
+
+    <h2 id="en11">11. External services and international processing</h2>
+    <p>The following external services are used by the App or when you contact us:</p>
+    <ul>
+      <li><strong>Google AdMob and UMP:</strong> Advertising, measurement, security, and privacy choices</li>
+      <li><strong>Google Play:</strong> App distribution, payments, and subscription verification, acknowledgment, management, and restoration</li>
+      <li><strong>Android, Google, or device manufacturer backup services:</strong> App data backups and device transfers according to your settings</li>
+      <li><strong>Gmail:</strong> Sending, receiving, and storing inquiries and attachments when you email the Operator</li>
+    </ul>
+    <p>When Google services are used, related information may be transmitted over the network to Google LLC and relevant affiliates as part of service requests. Depending on the service and your region, information may be processed on servers outside your country, including the United States. Backup and email providers also apply their own processing practices.</p>
+    <p>The relevant sections above explain the information and purposes involved. Consult each provider for specific processing locations, retention, safeguards, and rights procedures. For Google, see the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
+    <p>The App has no feature that directly sends or sells local profiles and individual game records to advertisers. External advertising SDK processing takes place separately as described in Section 6.</p>
+
+    <h2 id="en12">12. Children and guardians</h2>
+    <p>Children are part of the App's intended audience. A guardian should help manage a child's profile entries, advertising privacy choices, and purchases. We recommend using a nickname and avoiding real names and unnecessary personal information.</p>
+    <p>In South Korea, where consent is legally required to process personal information of a child under 14, consent from a legal guardian and verification of that consent are required. Other regions apply their own children's privacy rules and consent ages.</p>
+    <p>Entering an age in a profile, completing the guardian check before a subscription purchase, or reading this Policy does not replace legally required privacy consent or age verification.</p>
+    <p>Guardians can review, edit, and delete a child's profiles and records in the App and contact the email in Section 16 about privacy or rights requests. If we receive an inquiry about a child's information processed without required consent, we will investigate and take appropriate steps, including deletion where necessary.</p>
+
+    <h2 id="en13">13. Security</h2>
+    <ul>
+      <li>Profiles, game records, and settings are stored in Android's private App storage.</li>
+      <li>The App limits unnecessary information, including profile contents and raw purchase tokens, in its own diagnostic records.</li>
+      <li>Payments use Google Play. User data transmitted by the Google Mobile Ads SDK is protected by Google's TLS encryption in transit.</li>
+      <li>We request only information needed for support and use support materials for that purpose.</li>
+    </ul>
+    <p>Use a screen lock and operating system security updates to help protect against device loss and access by others. Local profiles do not have separate login protection. People sharing the same device may be able to access other profiles and records.</p>
+
+    <h2 id="en14">14. Your rights and how to exercise them</h2>
+    <p>Depending on applicable law, you and legal guardians may have rights to access, correct, delete, suspend or restrict processing of personal information, and withdraw consent.</p>
+    <ul>
+      <li><strong>Local information:</strong> Review profiles and records in the App, edit or delete profiles, or clear App data through Android.</li>
+      <li><strong>Advertising privacy choices:</strong> Where available, use Ad privacy settings in the App and your device or Google account privacy controls.</li>
+      <li><strong>Subscriptions:</strong> Manage or cancel through your Google Play account.</li>
+      <li><strong>Support materials received by the Operator:</strong> Email us below to request access, correction, or deletion.</li>
+    </ul>
+    <p>We may need limited additional information to verify a request. Requests will be handled according to applicable legal procedures and time limits. If a legal restriction prevents us from fulfilling a request, we will explain why. For data managed by Google or other external providers, you may need to use that provider's rights procedures.</p>
+    <p>You may also seek assistance from or lodge a complaint with your local data protection authority.</p>
+
+    <h2 id="en15">15. Changes to this Privacy Policy</h2>
+    <p>We may update this Policy when App features, external services, or relevant laws change. Updated content and its effective date will be posted on this page. Material changes affecting your rights will be communicated through an appropriate method, such as an in-App notice. Separate consent will be obtained where legally required.</p>
+
+    <h2 id="en16">16. Contact and public URL</h2>
+    <div class="contact">
+      <p><strong>Operator and privacy contact:</strong> MO KING</p>
+      <p><strong>Email:</strong> <a href="mailto:mokingdeveloper1@gmail.com">mokingdeveloper1@gmail.com</a></p>
+      <p><strong>Public URL:</strong> <a href="https://mokingapps.github.io/brainup-privacy.html">https://mokingapps.github.io/brainup-privacy.html</a></p>
+    </div>
+    <p>Include the App name and a description of the issue in your inquiry. Do not send passwords, full payment card numbers, or raw purchase tokens. Hide unnecessary personal information in screenshots and diagnostic materials.</p>
+    <p>This Policy page is hosted on GitHub Pages. GitHub logs and stores visitors' IP addresses for security purposes. This page itself contains no additional advertising or analytics scripts and no personal information entry form. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+    <p class="back-top"><a href="#en">Back to top</a></p>
+  </article>
+  <footer>MO KING · MO KING BRAIN UP</footer>
 </main>
+<script>
+  (() => {
+    'use strict';
+    const navigation = document.getElementById('language');
+    const articles = Array.from(document.querySelectorAll('.policy'));
+    const buttons = Array.from(navigation.querySelectorAll('[data-language]'));
+    const languageFromHash = () => {
+      const match = /^#(ko|en)(?:\d+|-title)?$/.exec(window.location.hash);
+      return match ? match[1] : null;
+    };
+    function showLanguage(language) {
+      articles.forEach(article => { article.hidden = article.id !== language; });
+      buttons.forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.language === language));
+      });
+      document.documentElement.lang = language;
+      document.title = language === 'ko'
+        ? 'MO KING BRAIN UP | 개인정보처리방침'
+        : 'MO KING BRAIN UP | Privacy Policy';
+    }
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const language = button.dataset.language;
+        showLanguage(language);
+        window.history.replaceState(null, '', '#' + language);
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      });
+    });
+    const browserLanguage = (navigator.language || 'ko').toLowerCase();
+    showLanguage(languageFromHash() || (browserLanguage.startsWith('ko') ? 'ko' : 'en'));
+    navigation.hidden = false;
+    function revealHashTarget() {
+      const language = languageFromHash();
+      if (!language) return;
+      showLanguage(language);
+      const target = document.getElementById(window.location.hash.slice(1));
+      if (target) requestAnimationFrame(() => {
+        if (target.id === language) window.scrollTo({ top: 0, behavior: 'instant' });
+        else target.scrollIntoView({ block: 'start', behavior: 'instant' });
+      });
+    }
+    window.addEventListener('hashchange', revealHashTarget);
+    revealHashTarget();
+  })();
+</script>
 </body>
 </html>
